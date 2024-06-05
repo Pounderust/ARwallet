@@ -1,0 +1,25 @@
+ //Configure supportedWallets in Provider
+import {
+  Provider,
+  ...Wallet,
+  ...Wallet,
+  wallet_Connect,
+from "@...";
+}
+
+function AppWithProviders() {
+  return (
+    <Provider
+      supportedWallets={[
+        ...Wallet({
+          recommended: true,
+        }),
+        ...Wallet(),
+        w...Connect(),
+      ]}
+      clientId="<your_client_id>"
+    >
+      <App />
+    </...Provider>
+  );
+}
