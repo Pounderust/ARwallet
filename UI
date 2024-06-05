@@ -1,12 +1,14 @@
 import {
   Provider,
   ConnectButton,
-} from "web/react";
+  from "web/react";
+}
 import {
   createWallet,
   walletConnect,
   inAppWallet,
-} from "web/wallets";
+  from "web/wallets";
+}
 
 const client = createwebClient({
   clientId: "CLIENT_ID",
@@ -25,7 +27,7 @@ const wallets = [
 
 export default function App() {
   return (
-    <webProvider>
+    <Provider> 
       <ConnectButton
         client={client}
         wallets={wallets}
